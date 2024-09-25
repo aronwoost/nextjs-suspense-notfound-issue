@@ -1,12 +1,6 @@
 import { notFound } from "next/navigation";
 
-type Props = {
-  params: {
-    id: string;
-  };
-};
-
-const ProductPage = ({ params }: Props) => {
+const ProductPage = ({ params }) => {
   if (params.id === "10") {
     notFound();
   }
